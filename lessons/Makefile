@@ -1,3 +1,5 @@
+CC = fpc
+
 clean:
 	rm -rf *.o
 	rm -rf quest??
