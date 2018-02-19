@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+</head>
+<body>
+    <h1 style="text-align: center">Компания</h1>
+    <table width=100% border="1">
+        <tr>
+            <td colspan="2" style="height: 20px; text-align: right" >Здесь могла быть ваша реклама</td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">Главная страница</td>
+            <td id="content" rowspan="7" width=80%></td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">О компании</td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">Услуги</td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">Контакты</td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">Компьютеры</td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">ПО</td>
+        </tr>
+        <tr>
+            <td onclick="open_another(this);">Гостевая</td>
+        </tr>
+    </table>
+</body>
+<script>
+    function open_another(elem){
+        var content_elem = document.getElementById("content");
+        var text = elem.innerText;
+        content_elem.innerText = text;
+    }
+</script>
+</html>
