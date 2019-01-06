@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Книжный магазин</title>
+    <style>
+        .div_form{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; background-color: #E0F051"> Книжный магазин</h1>
+    <div>
+        <div style="display: inline-block; position: relative; width: 15%; top:-50px">
+            <ul type="none">
+                <li><a href="" style="color: coral">Главнная</a></li>
+                <li><a href="" style="color: coral">Новинки</a></li>
+                <li><a href="" style="color: coral">Каталог книг</a></li>
+                <li><a href="" style="color: coral">Форма заказа</a></li>
+                <li><a href="" style="color: coral">Контакты</a></li>
+            </ul>
+            <div style="text-align: center">
+                Новинки
+                <br>
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/43/ICon-SteveJobs_Cover.jpg" height="150" width="100">
+                <br>
+                iCon: Steve Jobs
+            </div>
+        </div>
+        <div style="display: inline-block; position: relative; width: 80%; height: 100%">
+            <form>
+                <h1 style="text-align: center">Форма заказа</h1>
+                <div class="div_form">Для заказа товара заполните поля следующей формы</div>
+                <div class="div_form">Все поля обязательны для заполнения</div>
+                <div class="div_form">
+                    <label for="author" style="margin-right: 60px">автор</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="div_form">
+                    <label for="name" style="margin-right: 30px">название</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="div_form">
+                    <label for="count" style="padding-right: 133px">количество</label>
+                    <input type="text" id="count" style="width: 50px">
+                </div>
+                <div class="div_form">
+                    <label for="addres" style="margin-right: 60px">Адрес</label>
+                    <input type="text" id="addres">
+                </div>
+                <div class="div_form">
+                    <label for="sposob">Способ доставки</label>
+                    <input type="radio" name="sposob" id="sposob">Почтой
+                    <input type="radio" name="sposob" id="sposob">Курьером              
+                </div>
+                <div class="div_form">
+                    <label for="pay_type">Способ оплаты</label>
+                    <select>
+                        <option>Наличными</option>
+                        <option>Безналичными</option>
+                    </select>
+                </div>
+                <div class="div_form">
+                    <label for="comment">Дополнительные пожелания</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+                </div>
+                <div class="div_form">
+                    <label for="offer">Ознакомлен с условиями доставки</label>
+                    <input type="checkbox" name="offer" id="offer">
+                </div>
+                <div class="div_form"><input type="submit" value="Отправить"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
